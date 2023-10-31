@@ -1,0 +1,114 @@
+
+body{
+    background-image: url('https://images6.alphacoders.com/509/thumb-1920-509906.jpg');
+}
+img{
+  width: 100%;
+}
+.container-fluid{
+background-color: red;
+}
+.header{
+  display: flex;
+  margin: 550px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+}
+h5{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: red;
+   text-align: center;
+}
+.navbar-nav{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-around;
+  width: 900px;
+}
+.card-body1{
+  width: 250px;
+  margin-left: 70px;
+  border: 1px solid black;
+}
+.card-body2{
+  width: 250px;
+  margin-left: 250px;
+  border: 1px solid black;
+}
+.card-body3{
+  width: 250px;
+  margin-left: 250px;
+  border: 1px solid black;
+}
+.mage{
+  margin-left: 25px;
+}
+.card1{
+  margin-top: 50px;
+  border: 1px solid black;
+  display: flex;
+  width: 1500px;
+  height: 470px;
+  flex-direction: unset;
+
+}
+.card2{
+  margin-top: 50px;
+  border: 1px solid black;
+  display: flex;
+  width: 1500px;
+  height: 470px;
+  flex-direction: unset;
+
+}
+.card3{
+  margin-top: 50px;
+  border: 1px solid black;
+  display: flex;
+  width: 1500px;
+  height: 470px;
+  flex-direction: unset;
+
+}
+.card4{
+  margin-top: 50px;
+  border: 1px solid black;
+  display: flex;
+  width: 1500px;
+  height: 470px;
+  flex-direction: unset;
+
+}
+.card5{
+  margin-top: 50px;
+  border: 1px solid black;
+  display: flex;
+  width: 1500px;
+  height: 470px;
+  flex-direction: unset;
+
+}
+.p{
+  margin-left: 80px;
+  margin-bottom: 10px;
+}
+.card-body{
+  width: 600px;
+  border: 2px solid blue ;
+  display: table-column;
+  margin: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  animation: anima 30s infinite;
+}
+.mage{
+  width: 200px;
+}
+p{
+  color: #ffffff;
+  text-align: center;
+}
+
+

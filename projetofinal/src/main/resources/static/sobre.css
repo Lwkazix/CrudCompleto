@@ -1,0 +1,54 @@
+img{
+    width: 1200px;
+    margin: 170px;
+ }
+ body{
+      background-image: url('wallb.jpg');
+ }
+ .header{
+     display: flex;
+     margin: 550px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     justify-content: space-evenly; 
+ }
+ .container-fluid{
+   background-color: red;
+ } 
+ 
+ h5{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .navbar-nav{
+     margin-top: 5px;
+     margin-bottom: 5px;
+     display: flex;
+     justify-content: space-evenly;
+     width: 900px; 
+ }  
+ main{
+    
+     height: 700px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+ }
+ text{
+     border: 1px solid black;
+ 
+ 
+ }
+ h1{
+    color: #fff;
+     text-align: center;
+ }
+ h3{
+     color: #fff;
+     text-align: center;
+ } 
+ p{
+     width: 700px;
+     color: #fff;
+     text-align: center;
+ }

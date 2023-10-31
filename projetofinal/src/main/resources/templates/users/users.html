@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projeto Final</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/users.css">
+</head>
+  <body>
+    <header>
+        <nav>
+            <div class="header">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link" href="/central/classic">INICIO</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/central/about">SOBRE</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="/">CLASSICOS</a>
+                            </li>
+                            <div class="dropdown">
+                              <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PLATAFORMAS
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/central/ps5">PS5</a></li>
+                                <li><a class="dropdown-item" href="/central/ps4">PS4</a></li>
+                                <li><a class="dropdown-item" href="/central/xbox">XBOX ONE</a></li>
+                                <li><a class="dropdown-item" href="/central/xboxs">XBOX Serie S/X</a></li>
+                                <li><a class="dropdown-item" href="/central/switch">SWITCH</a></li>
+                                
+                              </ul>
+                          </div>
+                            <li class="nav-item">
+                              <a class="nav-link" href="/central/register">CADASTRO</a>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </nav>
+    </header>
+<div class="container-fluid">
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800"></h1>
+    <p class="mb-4"><a target="_blank"
+            href="https://datatables.net"></a></p>
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h3 class="m-0 font-weight-bold text-secondary">Pessoa Cadastradas</h3>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Email</th>
+                            <th>Nome</th>
+                            <th>Sobrenome</th>
+                            <th>Senha</th>
+                            <th>Alterar</th>
+                            <th>Excluir</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="user:${users}" xmlns:th="http://www.w3.org/1999/xhtml">
+                            <td th:text="${user.id}"></td>
+                            <td th:text="${user.email}"></td>
+                            <td th:text="${user.nome}"></td>
+                            <td th:text="${user.sobreNome}"></td>
+                            <td th:text="${user.senha}"></td>
+                            <td><a th:href="@{'/central/' + ${user.id}}" class="btn btn-warning">Alterar</a></td>
+                            <td><a th:href="@{/central/delete/__${user.id}__}" onclick="return confirm('Tem Certeza que desejar excluir o registro ?')" class="btn btn-danger">Excluir</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /.container-fluid -->
+</div>
+</html>

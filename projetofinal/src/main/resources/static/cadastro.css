@@ -1,0 +1,181 @@
+.header{
+    display: flex;
+    margin: 550px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-evenly; 
+}
+.container-fluid{
+  background-color: rgb(255, 4, 4);
+} 
+
+h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar-nav{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 900px; 
+}  
+main{ 
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+/* geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  color: #323232;
+  border: none;
+}
+
+input, label {
+  display: block;
+  outline: none;
+  width: 100%;
+}
+
+a {
+  color: #E60084;
+}
+
+body {
+  background-color: black;
+  padding-top: 5vh;
+  background-image: url('');
+  background-size: cover;
+  background-position-y: -150px;
+}
+
+/* form */
+#main-container {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+ 
+  border-radius: 10px;
+  padding: 25px;
+  animation: p 60s infinite;
+}
+
+#main-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.full-box {
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.half-box {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.spacing {
+  margin-right: 2.5%;
+}
+
+label {
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+input {
+  border-bottom: 2px solid #323232;
+  padding: 10px;
+  font-size: .9rem;
+  margin-bottom: 40px;
+}
+
+input:focus {
+  border-color: #E60084;
+}
+
+input[type="submit"] {
+  background-color: #E60084;
+  color: #FFF;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#agreement {
+  margin-right: 5px;
+}
+
+#agreement, #agreement-label {
+  display: inline-block;
+  width: auto;
+}
+
+.error-validation {
+  color: #ff1a1a;
+  position: absolute;
+  top: 57px;
+  font-size: 12px;
+}
+
+.template {
+  display: none;
+}
+label{
+    color: #fff;
+}
+h1{
+    color: #fff;
+}
+@keyframes p{
+    0%{
+        background-image: url('wp1.jpg');
+    }
+    20%{
+        background-image: url('wp2.jpg');
+    }
+    40%{
+        background-image: url('wp3.jpg');
+    }
+    60%{
+        background-image: url('wp4.jpg');
+    }
+    80%{
+        background-image: url('wp5.jpg');
+    }
+    100%{
+        background-image: url('wp6.jpg');
+    }
+}
+.pl{
+  border: 1px solid black;
+  width: 420px;
+  height: 600px;
+  position: absolute;
+  margin-top: 0px;
+  background-image: url('peakpx.jpg');
+}
+.pr{
+  border: 1px solid black;
+  width: 420px;
+  height: 600px;
+  position: absolute;
+  margin-left: 950px;
+  background-image: url('peakly.png');
+}
+.url{
+  display: flex;
+}

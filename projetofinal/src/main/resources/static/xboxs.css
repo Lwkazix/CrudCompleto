@@ -1,0 +1,99 @@
+img {
+    width: 1200px;
+    margin: 170px;
+}
+
+body {
+    background-image: url('wall4.jpg');
+}
+
+.header {
+    display: flex;
+    margin: 550px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+.container-fluid {
+    background-color: greenyellow
+}
+
+h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar-nav {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 900px;
+}
+
+main {
+    /* border: 1px solid black; */
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+text {
+    border: 1px solid black;
+
+
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+h3 {
+    color: #fff;
+    text-align: center;
+}
+
+p {
+    width: 700px;
+    color: #fff;
+    text-align: center;
+}
+
+.cad {
+    /* border: 2px solid black; */
+    width: 200px;
+    height: 400px;
+    text-align: center;
+
+}
+
+.mage {
+    width: 200px;
+    height: 250px;
+    /* border: 5px solid blue; */
+    margin-left: 0px;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.cade {
+    margin-top: -170px;
+    margin-bottom: 10px;
+    /* border: 1px solid black; */
+    height: 100px;
+}
+
+.id {
+    display: flex;
+    padding: 10px;
+}
+h5{
+   color: greenyellow;
+    padding: 20px;
+}
+.meta{
+    padding: 10px;
+}
